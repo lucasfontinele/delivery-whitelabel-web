@@ -1,3 +1,5 @@
+import { handleConvertPxToRem } from 'helpers/pxToRem';
+
 export type LogoProps = {
   width: number;
   height: number;
@@ -5,7 +7,14 @@ export type LogoProps = {
 
 function Logo({ height, width }: LogoProps) {
   return (
-    <img src="/assets/images/orla-rio.svg" alt="" style={{ height, width }} />
+    <img
+      src="/assets/images/orla-rio.svg"
+      alt="Orla Rio"
+      style={{
+        height: handleConvertPxToRem(height, true),
+        width: handleConvertPxToRem(width, true),
+      }}
+    />
   );
 }
 
