@@ -23,7 +23,7 @@ module.exports = plop => {
         },
         {
           type: 'add',
-          path: '../src/components/{{path}}/styles.module.scss',
+          path: '../src/components/{{path}}/{{pascalCase name}}.styles.module.scss',
           templateFile: 'templates/styles.module.scss.hbs',
         },
         {
