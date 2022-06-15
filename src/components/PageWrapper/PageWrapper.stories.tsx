@@ -1,6 +1,7 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import PageWrapper, { PageWrapperProps } from '.';
+import styles from './styles.module.scss';
 
 export default {
   title: 'Component/PageWrapper',
@@ -12,5 +13,5 @@ const Template: Story<PageWrapperProps> = args => <PageWrapper {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  foo: 'bar',
+  children: <div className={styles.storybookExamplePage}>Hello World</div>,
 };

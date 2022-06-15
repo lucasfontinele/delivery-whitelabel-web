@@ -1,4 +1,4 @@
-import React from 'react';
+import clsx from 'clsx';
 
 import styles from './styles.module.scss';
 
@@ -6,14 +6,14 @@ function BottomTabBar() {
   return (
     <nav className={styles.container}>
       <ul className={styles.itemsContainer}>
-        <li className={styles.itemContainer}>
+        <li className={clsx([styles.itemContainer, styles.active])}>
           <img
             className={styles.icon}
             src="/assets/images/icon-menu.svg"
             alt="Icon menu"
           />
 
-          <p>Cardápio</p>
+          <p className={clsx(styles.active)}>Cardápio</p>
         </li>
 
         <li className={styles.itemContainer}>
