@@ -1,3 +1,5 @@
+@import 'styles/abstract/_colors.scss';
+
 .storybookContainer {
   max-width: 375px;
   width: 100%;
@@ -15,12 +17,12 @@
 
   padding: 17px 24px;
 
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  background: $color-neutral-background;
+  border: 1px solid $color-neutral-medium;
   border-radius: 8px;
 
   ::placeholder {
-    color: #CCCCCC;
+    color: $color-neutral-medium;
   }
 
   font-family: 'Roboto-Regular';
@@ -28,7 +30,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-  color: #666666;
+  color: $color-neutral-dark;
 }
 
 .errorMessage {
@@ -39,5 +41,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: #EB5757;
+  color: $color-feedback-error;
 }
