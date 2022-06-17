@@ -13,27 +13,27 @@
 
 .container {
   width: 100%;
-  height: 100%;
-
-  padding: 1.7em 2.4em;
+  height: 12.5em;
+  resize: none;
+  padding: 1.6em;
 
   background: $color-neutral-background;
   border: 1px solid $color-neutral-medium;
   border-radius: 8px;
 
-  ::placeholder {
-    color: $color-neutral-medium;
-  }
-
   font-family: 'Roboto-Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 1.6em;
-  line-height: 100%;
+  line-height: 130%;
   color: $color-neutral-dark;
+
+  ::placeholder {
+    color: $color-neutral-medium;
+  }
 }
 
-.errorMessage {
+.error {
   margin-top: 8px;
 
   font-family: 'Roboto-Regular';

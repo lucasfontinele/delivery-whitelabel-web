@@ -1,3 +1,5 @@
+@import 'styles/abstract/_colors.scss';
+
 .storybookContainer {
   max-width: 375px;
   width: 100%;
@@ -9,7 +11,7 @@
   font-family: 'Roboto-Bold';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6em;
   line-height: 150%;
   text-align: center;
 
@@ -22,7 +24,7 @@
   display: flex;
   align-items: center;
 
-  padding: 12px 25px 13px;
+  padding: 1.2em 2.5em 1.3em;
 
   &:hover {
     cursor: pointer;
@@ -34,14 +36,14 @@
 }
 
 .outlined {
-  background: #FFFFFF;
-  border: 1px solid #1D71B8;
-  color: #1D71B8;
+  background: $color-neutral-background;
+  border: 1px solid $color-brand-primary;
+  color: $color-brand-primary;
 }
 
 .contained {
-  background: #1D71B8;
-  color: #FFFFFF;
+  background: $color-brand-primary;
+  color: $color-neutral-background;
 }
 
 .left {
