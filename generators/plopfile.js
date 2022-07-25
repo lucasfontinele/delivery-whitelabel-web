@@ -18,27 +18,22 @@ module.exports = plop => {
       let actions = [
         {
           type: 'add',
-          path: '../src/components/{{path}}/{{pascalCase name}}.tsx',
+          path: '../src/components/{{path}}/index.tsx',
           templateFile: 'templates/Component.tsx.hbs',
         },
         {
           type: 'add',
-          path: '../src/components/{{path}}/{{pascalCase name}}.styles.module.scss',
-          templateFile: 'templates/styles.module.scss.hbs',
+          path: '../src/components/{{path}}/styles.tsx',
+          templateFile: 'templates/Component.styles.ts.hbs',
         },
         {
           type: 'add',
-          path: '../src/components/{{path}}/{{pascalCase name}}.stories.tsx',
+          path: '../src/components/{{path}}/stories.tsx',
           templateFile: 'templates/stories.tsx.hbs',
         },
         {
           type: 'add',
-          path: '../src/components/{{path}}/index.ts',
-          templateFile: 'templates/index.ts.hbs',
-        },
-        {
-          type: 'add',
-          path: '../src/components/{{path}}/{{pascalCase name}}.misc.ts',
+          path: '../src/components/{{path}}/misc.ts',
           templateFile: 'templates/Component.misc.ts.hbs',
         },
       ];
