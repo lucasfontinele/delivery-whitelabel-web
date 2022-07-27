@@ -1,16 +1,14 @@
-import React from 'react';
-
-import type { {{pascalCase name}}Props } from './{{pascalCase name}}.misc';
-import styles from './{{pascalCase name}}.styles.module.scss';
+import type { {{pascalCase name}}Props } from './misc';
+import * as S from './styles';
 
 function {{pascalCase name}}({ ...props }: {{pascalCase name}}Props) {
   const { foo } = props;
 
   return (
-    <div className={styles.container}>
+    <S.Container>
       <h1>{{pascalCase name}}</h1>
       <p>{foo}</p>
-    </div>
+    </S.Container>
   );
 }
 
