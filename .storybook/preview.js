@@ -1,15 +1,21 @@
-import '!style-loader!css-loader!sass-loader!../src/styles/base/_reset.scss';
+import { ThemeProvider } from 'styled-components';
+
+import theme from '../src/styles/theme';
+import GlobalStyles from '../src/styles/global';
 
 const customViewports = {
-  name: 'iPhone 12 Pro',
-  styles: {
-    width: 390,
-    height: 844,
+  mobile: {
+    name: 'Mobile',
+    styles: {
+      width: 390,
+      height: 844,
+    },
+    type: 'mobile',
   },
-}
+};
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -17,9 +23,18 @@ export const parameters = {
     },
   },
   viewport: {
-    defaultViewport: 'iPhone 12 Pro',
+    defaultViewport: 'Small mobile',
     viewPorts: {
       ...customViewports,
-    }
-  }
-}
+    },
+  },
+};
+
+export const decorators = [
+  Story => (
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Story />
+    </ThemeProvider>
+  ),
+];
