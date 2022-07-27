@@ -1,14 +1,19 @@
-import 'styles/base/_reset.scss';
-
-import { useTranslation } from 'react-i18next';
 import ApplicationContext from 'hooks/useTheme';
+import { useTranslation } from 'react-i18next';
+import { ThemeProvider } from 'styled-components';
+
+import GlobalStyles from 'styles/global';
+import theme from 'styles/theme';
 
 function App() {
   const { t } = useTranslation();
 
   return (
     <ApplicationContext>
-      <p>{t('welcome_to_app')}</p>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <p>{t('welcome_to_app')}</p>
+      </ThemeProvider>
     </ApplicationContext>
   );
 }
