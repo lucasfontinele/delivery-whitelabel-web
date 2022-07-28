@@ -15,7 +15,7 @@ export default {
       regular: 400,
       medium: 500,
       bold: 700,
-      black: 700,
+      black: 900,
     },
     content: {
       xsmall: '1.2rem',
