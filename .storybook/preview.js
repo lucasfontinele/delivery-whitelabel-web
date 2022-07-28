@@ -5,10 +5,10 @@ import GlobalStyles from '../src/styles/global';
 
 const customViewports = {
   mobile: {
-    name: 'Mobile',
+    name: 'Iphone 12 Pro',
     styles: {
-      width: 390,
-      height: 844,
+      height: '844px',
+      width: '390px',
     },
     type: 'mobile',
   },
@@ -23,8 +23,9 @@ export const parameters = {
     },
   },
   viewport: {
-    defaultViewport: 'Small mobile',
-    viewPorts: {
+    defaultViewport: 'mobile',
+    layout: 'fullscreen',
+    viewports: {
       ...customViewports,
     },
   },

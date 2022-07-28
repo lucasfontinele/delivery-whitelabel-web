@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Header from 'components/Header';
-import BottomTabBar from 'components/BottomTabBar';
 
+import NavBar from 'components/NavBar';
 import styles from './styles.module.scss';
 
 export type PageWrapperProps = {
@@ -16,7 +16,7 @@ function PageWrapper({ children }: PageWrapperProps) {
 
       <main>{children}</main>
 
-      <BottomTabBar />
+      <NavBar />
     </div>
   );
 }

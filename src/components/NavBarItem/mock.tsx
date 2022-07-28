@@ -1,7 +1,7 @@
-import MenuIcon from 'components/Icons/Menu';
+import NewspaperIcon from 'components/Icons/Newspaper';
 
 export default {
   label: 'Notícias',
   href: '/noticias',
-  icon: <MenuIcon />,
+  icon: <NewspaperIcon />,
 };
