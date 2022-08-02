@@ -38,6 +38,7 @@ export default {
   colors: {
     white: '#ffffff',
     black: '#000000',
+    disabled: '#BDBDBD',
 
     primary: '#1D71B8',
 

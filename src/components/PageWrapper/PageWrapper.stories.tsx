@@ -1,4 +1,5 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Meta, Story } from '@storybook/react/types-6-0';
+import { withRouter } from 'storybook-addon-react-router-v6';
 
 import PageWrapper, { PageWrapperProps } from '.';
 import styles from './styles.module.scss';
@@ -6,6 +7,7 @@ import styles from './styles.module.scss';
 export default {
   title: 'Component/PageWrapper',
   component: PageWrapper,
+  decorators: [withRouter],
 } as Meta;
 
 const Template: Story<PageWrapperProps> = args => <PageWrapper {...args} />;
