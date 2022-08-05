@@ -1,7 +1,7 @@
-import type { SnackbarProps } from './Snackbar.misc';
+// import type { SnackbarProps } from './Snackbar.misc';
 import styles from './Snackbar.styles.module.scss';
 
-function Snackbar({ ...props }: SnackbarProps) {
+function Snackbar() {
   return (
     <div className={styles.container}>
       <h1>Snackbar</h1>
