@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+
+  padding-bottom: 70px;
 `;
 
 export const CardContainer = styled.div`

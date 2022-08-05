@@ -6,6 +6,7 @@ import ProductInfo from 'components/ProductInfo';
 import MenuSection from 'components/MenuSection';
 
 import AdditionalItem from './components/AdditionalItem';
+import OrderNotes from './components/OrderNotes';
 
 import * as S from './styles';
 
@@ -33,6 +34,14 @@ function AddProduct() {
         <MenuSection title="Molhos" description="Escolha até 2 itens" mandatory>
           <AdditionalItem />
           <AdditionalItem />
+        </MenuSection>
+
+        <MenuSection
+          title="Deixe sua mensagem"
+          description="Escreva até 140 caracteres"
+          mandatory={false}
+        >
+          <OrderNotes />
         </MenuSection>
       </S.CardContainer>
 
