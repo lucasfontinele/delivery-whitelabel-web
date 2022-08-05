@@ -1,19 +1,15 @@
 import clsx from 'clsx';
 
 import type { ButtonProps } from './Button.misc';
-import styles from './Button.styles.module.scss';
+import * as S from './styles';
 
 function Button({ ...props }: ButtonProps) {
   const { children, content, variant } = props;
 
   return (
-    <button
-      className={clsx(styles.container, styles[content], styles[variant])}
-      type="button"
-      {...props}
-    >
+    <S.Container className={clsx(content, variant)} type="button" {...props}>
       {children}
-    </button>
+    </S.Container>
   );
 }
 

@@ -29,6 +29,7 @@ export const parameters = {
       ...customViewports,
     },
   },
+  layout: 'fullscreen',
 };
 
 export const decorators = [
