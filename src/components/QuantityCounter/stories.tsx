@@ -8,10 +8,12 @@ export default {
   component: QuantityCounter,
 } as Meta;
 
-const Template: Story<QuantityCounterProps> = args => <QuantityCounter {...args} />;
+const Template: Story<QuantityCounterProps> = args => (
+  <QuantityCounter {...args} />
+);
 
 export const Default = Template.bind({});
 
 Default.args = {
-  foo: 'bar',
+  variantColor: '#171717',
 };
