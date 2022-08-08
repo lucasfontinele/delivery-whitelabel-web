@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Input from '.';
-import styles from './Input.styles.module.scss';
+import { StorybookContainer } from './styles';
 import type { InputProps } from './Input.misc';
 
 export default {
@@ -10,15 +10,15 @@ export default {
 } as Meta;
 
 const Template: Story<InputProps> = args => (
-  <div className={styles.storybookContainer}>
+  <StorybookContainer>
     <Input {...args} />
-  </div>
+  </StorybookContainer>
 );
 
 export const Default = Template.bind({});
 
 Default.args = {
-  // foo: 'bar',
+  placeholder: 'Here an example',
 };
 
 export const WithError = Template.bind({});

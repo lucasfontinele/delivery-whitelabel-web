@@ -1,18 +1,16 @@
 import React from 'react';
 
 import type { InputProps } from './Input.misc';
-import styles from './Input.styles.module.scss';
+import * as S from './styles';
 
 function Input({ ...props }: InputProps) {
   const { error } = props;
 
   return (
-    <div className={styles.wrapper}>
-      <input placeholder="Here some placeholder" className={styles.container} />
-      {error ? (
-        <small className={styles.errorMessage}>{error}</small>
-      ) : undefined}
-    </div>
+    <S.Wrapper>
+      <S.Input {...props} />
+      {error ? <S.ErrorMessage>{error}</S.ErrorMessage> : undefined}
+    </S.Wrapper>
   );
 }
 
