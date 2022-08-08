@@ -1,20 +1,18 @@
-import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 import Header from 'components/Header';
-
 import NavBar from 'components/NavBar';
+
 import styles from './styles.module.scss';
 
-export type PageWrapperProps = {
-  children: React.ReactNode;
-};
-
-function PageWrapper({ children }: PageWrapperProps) {
+function PageWrapper() {
   return (
     <div className={styles.container}>
       <Header />
 
-      <main>{children}</main>
+      <main>
+        <Outlet />
+      </main>
 
       <NavBar />
     </div>

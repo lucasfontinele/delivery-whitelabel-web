@@ -1,7 +1,5 @@
 import { useTheme } from 'styled-components';
 
-import Header from 'components/Header';
-import NavBar from 'components/NavBar';
 import HeadImage from 'components/HeadImage';
 import PageCard from 'components/PageCard';
 import ProductInfo from 'components/ProductInfo';
@@ -19,8 +17,6 @@ function AddProduct() {
 
   return (
     <S.Container>
-      <Header />
-
       <HeadImage
         imageUrl="https://i.imgur.com/bkaVGCB.png"
         handleBackButton={() => {
@@ -63,8 +59,6 @@ function AddProduct() {
           </Button>
         </S.SubmitContainer>
       </S.SubmitActionsContainer>
-
-      <NavBar />
     </S.Container>
   );
 }
