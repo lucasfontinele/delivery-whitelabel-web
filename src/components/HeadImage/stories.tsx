@@ -30,3 +30,14 @@ WithRightContent.args = {
   },
   rightContent: <HeartIcon />,
 };
+
+export const WithImageOvershadow = Template.bind({});
+
+WithImageOvershadow.args = {
+  imageUrl: 'https://i.imgur.com/1jLCNwa.png',
+  handleBackButton: () => {
+    //
+  },
+  rightContent: <HeartIcon />,
+  message: 'Fechado agora',
+};
