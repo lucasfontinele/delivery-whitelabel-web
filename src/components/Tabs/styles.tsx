@@ -12,7 +12,7 @@ const activeTab = css`
   background: ${({ theme }) => theme.colors.primary};
 
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 100%;
   color: ${({ theme }) => theme.colors.neutral.light};
 `;
@@ -24,7 +24,7 @@ export const Tab = styled.button<{ active: boolean }>`
   border-radius: 8px;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 100%;
   text-align: center;
   color: ${({ theme }) => theme.colors.neutral.dark};
