@@ -12,7 +12,7 @@ export const CardContainer = styled.div`
   z-index: 50;
 `;
 
-export const NotesCharLenght = styled.p`
+export const NotesCharLength = styled.p`
   margin-top: 16px;
   margin-right: 16px;
 

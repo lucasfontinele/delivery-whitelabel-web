@@ -19,3 +19,16 @@ export const mock: TabsProps = {
     },
   ],
 };
+
+export const paymentTypeMock: TabsProps = {
+  options: [
+    {
+      label: 'Pague pelo app',
+      value: 0,
+    },
+    {
+      label: 'Pague na entrega',
+      value: 1,
+    },
+  ],
+};
