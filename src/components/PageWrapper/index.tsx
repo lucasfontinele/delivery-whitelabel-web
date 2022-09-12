@@ -10,7 +10,7 @@ function PageWrapper() {
     <div className={styles.container}>
       <Header />
 
-      <main>
+      <main className={styles.mainContainer}>
         <Outlet />
       </main>
 
