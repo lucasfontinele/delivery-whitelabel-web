@@ -52,6 +52,12 @@ export const BuyBox = styled.div`
   `}
 `;
 
+export const CounterContainer = styled.div`
+  margin-top: ${({ theme }) => theme.spacings.xsmall};
+  max-width: 7rem;
+  width: 100%;
+`;
+
 type PriceProps = {
   isPromotional?: boolean;
 };
@@ -86,4 +92,5 @@ export const Image = styled.img`
   width: 11rem;
   height: 11rem;
   border-radius: 0.8rem;
+  object-fit: cover;
 `;
