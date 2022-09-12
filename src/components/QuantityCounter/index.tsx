@@ -19,6 +19,8 @@ function QuantityCounter({ ...props }: QuantityCounterProps) {
 
   const handleDecrement = () => {
     setCounter(current => {
+      if (current <= 0) return 0;
+
       return current - 1;
     });
   };

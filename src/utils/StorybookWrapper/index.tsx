@@ -14,7 +14,7 @@ function StorybookWrapperProps({ children }: StorybookWrapperProps) {
     <div className={styles.container}>
       <Header />
 
-      <main>{children}</main>
+      <main className={styles.mainContainer}>{children}</main>
 
       <NavBar />
     </div>

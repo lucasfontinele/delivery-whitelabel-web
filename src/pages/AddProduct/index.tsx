@@ -44,7 +44,7 @@ function AddProduct() {
           mandatory={false}
         >
           <OrderNotes />
-          <S.NotesCharLenght>111</S.NotesCharLenght>
+          <S.NotesCharLength>111</S.NotesCharLength>
         </MenuSection>
       </S.CardContainer>
 

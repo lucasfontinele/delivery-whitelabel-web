@@ -19,11 +19,13 @@ function HeadImage({ ...props }: HeadImageProps) {
         <S.AlwaysOnTop>{rightContent}</S.AlwaysOnTop>
       </S.Header>
       <S.Image src={imageUrl} alt="Product" />
-      <S.OverflowInfo>
-        <S.OverflowBox>
-          <span>{message}</span>
-        </S.OverflowBox>
-      </S.OverflowInfo>
+      {!!message && (
+        <S.OverflowInfo>
+          <S.OverflowBox>
+            <span>{message}</span>
+          </S.OverflowBox>
+        </S.OverflowInfo>
+      )}
     </S.Container>
   );
 }

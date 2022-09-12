@@ -17,8 +17,11 @@ export const Container = styled.button`
 
   padding: 12px 25px 13px;
 
+  transition: all 0.2s linear;
+
   &:hover {
     cursor: pointer;
+    filter: brightness(0.8);
   }
 
   :disabled {
