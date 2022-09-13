@@ -38,3 +38,11 @@ export const Description = styled.p`
   line-height: 100%;
   color: ${({ theme }) => theme.colors.neutral.dark};
 `;
+
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+`;
