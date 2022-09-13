@@ -5,6 +5,7 @@ export type TabType = {
 
 export type TabsProps = {
   options: TabType[];
+  onChangeTab?: (value: number) => void;
 };
 
 export const mock: TabsProps = {

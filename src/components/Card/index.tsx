@@ -1,3 +1,4 @@
+import QuantityCounter from 'components/QuantityCounter';
 import formatPrice from 'utils/format-price';
 import * as S from './styles';
 
@@ -8,6 +9,7 @@ export type CardProps = {
   promotionalPrice?: number;
   image: string;
   href: string;
+  hasCounter?: boolean;
 };
 
 const Card = ({
@@ -17,6 +19,7 @@ const Card = ({
   name,
   price,
   promotionalPrice,
+  hasCounter,
 }: CardProps) => {
   return (
     <S.WrapperLink to={href}>
@@ -30,6 +33,11 @@ const Card = ({
               <S.Price isPromotional>{formatPrice(price)}</S.Price>
             )}
           </S.BuyBox>
+          {hasCounter && (
+            <S.CounterContainer>
+              <QuantityCounter />
+            </S.CounterContainer>
+          )}
         </S.Header>
 
         <S.Image src={image} />
