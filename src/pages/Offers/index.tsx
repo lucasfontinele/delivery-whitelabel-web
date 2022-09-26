@@ -7,11 +7,11 @@ import HeadImage from 'components/HeadImage';
 import HeartIcon from 'components/Icons/Heart';
 import PageCard from 'components/PageCard';
 import Search from 'components/Search';
-import cardMock from 'components/Card/mock';
 
 import { useStore } from 'hooks/useStore';
 import { calculateDistanceBetween } from 'utils/spherical';
 import { isClosedStore } from 'utils/date';
+import { useOffers } from 'hooks/useOffers';
 
 import * as S from './styles';
 
@@ -26,8 +26,9 @@ const b = {
 
 function Offers() {
   const { profile, order_settings, opening_schedule } = useStore();
-
+  const offers = useOffers();
   const isClosed = isClosedStore(opening_schedule);
+
   const [distance, setDistance] = useState('0');
 
   const handleDistance = () => {
@@ -71,20 +72,27 @@ function Offers() {
             </S.CategoriesContainer>
 
             <S.OffersContainer>
-              <S.CategoryContainer>
-                <S.CategoryTitle>Promoções</S.CategoryTitle>
+              {offers.map(group => (
+                <S.CategoryContainer key={group.label} id={group.label}>
+                  <S.CategoryTitle>{group.label}</S.CategoryTitle>
 
-                <Card {...cardMock} />
-                <Card {...cardMock} />
-              </S.CategoryContainer>
-              <S.CategoryContainer>
-                <S.CategoryTitle>Sanduíches</S.CategoryTitle>
-
-                <Card {...cardMock} />
-                <Card {...cardMock} />
-                <Card {...cardMock} />
-                <Card {...cardMock} />
-              </S.CategoryContainer>
+                  {group.offers.map(offer => (
+                    <Card
+                      key={offer.id}
+                      description={offer.description}
+                      name={offer.title}
+                      href="#"
+                      price={offer.amount}
+                      promotionalPrice={
+                        offer.amount_without_discount > 0
+                          ? offer.amount_without_discount
+                          : undefined
+                      }
+                      image="https://img.cybercook.com.br/receitas/71/salada-primavera-6.jpeg"
+                    />
+                  ))}
+                </S.CategoryContainer>
+              ))}
             </S.OffersContainer>
           </S.ControlArea>
         </PageCard>
