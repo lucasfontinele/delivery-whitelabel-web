@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+type ControlAreaType = {
+  disabled: boolean;
+};
 
 export const Container = styled.div``;
 
@@ -36,4 +40,13 @@ export const CategoryTitle = styled.strong`
   font-size: 18px;
   line-height: 120%;
   color: ${({ theme }) => theme.colors.neutral.darkest};
+`;
+
+export const ControlArea = styled.div<ControlAreaType>`
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      opacity: 0.6;
+      pointer-events: none;
+    `}
 `;

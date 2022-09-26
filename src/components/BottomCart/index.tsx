@@ -5,7 +5,7 @@ import * as S from './styles';
 function BottomCart() {
   return (
     <S.Wrapper>
-      <S.Link to={`/${ROUTES.CHECKOUT.ROOT}`}>
+      <S.Link to={`/${ROUTES.CHECKOUT.ROOT}/${ROUTES.CHECKOUT.CART}`}>
         <S.Container>
           <S.Label>Ver carrinho&nbsp;•&nbsp;R$ 26,70</S.Label>
 
