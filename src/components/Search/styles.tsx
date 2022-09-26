@@ -21,6 +21,10 @@ export const Input = styled.input`
   ::placeholder {
     color: ${({ theme }) => theme.colors.neutral.medium};
   }
+
+  :disabled {
+    opacity: 0.6;
+  }
 `;
 
 export const Icon = styled.div`

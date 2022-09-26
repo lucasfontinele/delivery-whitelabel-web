@@ -14,7 +14,7 @@ function CommerceInfo({ ...props }: CommerceInfoProps) {
         <S.Title>{name}</S.Title>
 
         <S.TextInfo>
-          {distance} • {commerceType}
+          {distance} {commerceType ? `• ${commerceType}` : ''}
         </S.TextInfo>
         <S.TextInfo>Pedido mínimo {formatPrice(minimumOrderPrice)}</S.TextInfo>
         <S.TextInfo>{opening}</S.TextInfo>

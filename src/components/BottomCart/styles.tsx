@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 56px;
   width: 100%;
 `;
