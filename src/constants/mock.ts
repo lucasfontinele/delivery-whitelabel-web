@@ -33,7 +33,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 1,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc244',
         title: "Cerveja Fuller's Imperial Stout 500ml",
         description:
           "Fabricada no estilo autêntico do clássico do século 18, a edição limitada da Fuller's Imperial Stout é uma experiência deliciosa com uma infusão de botões de rosa que dão origem a sugestões de delícia turca.",
@@ -65,7 +65,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc245',
         title: 'Cerveja Colorado Appia 350ml',
         description:
           'A palavra Appia vem do latim e significa abelha. O nome perfeito para a primeira cerveja do Brasil a utilizar mel em sua fórmula. Uma combinação exótica que, além do mel das laranjeiras, é feita a partir da melhor cevada, trigos maltados e nossa exclusiva levedura de alta fermentação. Doce, encorpada e refrescante, é perfeita para quem busca novos e diferentes sabores. O seu estilo Honey Wheat Ale, combina com queijo brie, pernil e massas leves. Colorado Appia ganhou por três anos consecutivos a Medalha de bronze no festival Brasileiro de Cerveja. (2013, 2014 e 2015). Campeã Nacional com Medalha de Ouro no Estilo Flavoured Honey & Maple na WBA 2017.',
@@ -91,7 +91,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 12,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc246',
         title: 'Cerveja Colorado Ribeirão Lager 600ml',
         description:
           'O lançamento mais esperado da Cervejaria Colorado, a primeira artesanal do Brasil, acabou de chegar. E você, que faz parte do Empório da Cerveja, tem acesso antes de TODO MUNDO! Essa é a Colorado Ribeirão Lager. Uma cerveja que o nome já diz tudo. Nascida em Ribeirão Preto, nossa casa, é uma lager leve e refrescante, mas com a cara de Colorado, uma cervejaria que nunca faria mais do mesmo: cerveja clara com laranja, com IBU 20 e 4,5% de teor alcoólico com toda qualidade da primeira cervejaria artesanal do Brasil por um preço muito mais acessível do que a maioria!',
@@ -117,7 +117,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 6,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc247',
         title: "Cerveja Beck's 600ml",
         description:
           'A Cerveja Becks é uma legítima German Lager Puro Malte que segue a risca a Lei da Pureza da Cerveja desde 1873. Seu IBU (Unidade Internacional de Amargor) é 20. O resultado é uma cerveja de amargor intenso, sabor marcante e excepcional pureza. Ela é provocante, cheia de personalidade com um sabor característico e único. É a German Lager mais vendida no mundo.',
@@ -143,7 +143,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 6,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc248',
         title: 'Cerveja Hocus Pocus Magic Trap Belgian Strong Golden Ale 500ml',
         description:
           'A palavra Appia vem do latim e significa abelha. O nome perfeito para a primeira cerveja do Brasil a utilizar mel em sua fórmula. Uma combinação exótica que, além do mel das laranjeiras, é feita a partir da melhor cevada, trigos maltados e nossa exclusiva levedura de alta fermentação. Doce, encorpada e refrescante, é perfeita para quem busca novos e diferentes sabores. O seu estilo Honey Wheat Ale, combina com queijo brie, pernil e massas leves. Colorado Appia ganhou por três anos consecutivos a Medalha de bronze no festival Brasileiro de Cerveja. (2013, 2014 e 2015). Campeã Nacional com Medalha de Ouro no Estilo Flavoured Honey & Maple na WBA 2017.',
@@ -170,7 +170,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 6,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc249',
         title: 'Combo Colorado',
         description:
           'Kit: 3 Cervejas Colorado Appia 350ml + 3 Cervejas Colorado Ribeirão Lager 600ml',
@@ -216,7 +216,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc253',
         title: 'Negroni',
         description:
           'O Negroni é um drink italiano que foi batizado em homenagem ao conde Camillo Negroni, que em 1919, pediu para que adicionassem um toque de gim em vez de água com gás ao seu drink americano.',
@@ -242,7 +242,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 12,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc263',
         title: 'Martini',
         description:
           "O Martini, também conhecido como Dry Martini, é um coquetel feito com gim e vermute seco, na proporção de seis para um, sendo os ingredientes misturados e coados, servidos em um copo gelado. O martíni é um ícone popular, sendo conhecido como o 'rei dos coquetéis'.",
@@ -268,7 +268,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 12,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc273',
         title: 'Whisky Sour',
         description:
           'O Whisky Sour é uma bebida mista que contém uísque, suco de limão e açúcar. Para muitos, porém, faz parte de uma família de coquetéis antigos que lembram meados do século XX. Na verdade, o US Bartenders Guide escolheu o coquetel com sabor de frutas cítricas como representante da década de 20-1960.',
@@ -294,7 +294,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 12,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc283',
         title: 'Combo da Noite',
         description: 'Kit: 1 Whisky Sour + 1 Caipirinha',
         products: [
@@ -339,7 +339,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc293',
         title: 'Combo: 3 Pastéis de Costela + 6 bolinhos de Bacalhau',
         description: '3 unidades de pastéis com recheio de costela.',
         products: [
@@ -377,7 +377,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 4,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc343',
         title: 'Espetinho de Carne',
         description: '1 unidade de espetinho de coração de alcatra.',
         products: [
@@ -407,7 +407,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc543',
         title: 'Amendoim Cozido',
         description: 'Porção de 400g de Amendoim Cozido.',
         products: [
@@ -431,7 +431,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 4,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc643',
         title: 'Feijão Amigo',
         description: 'Porção individual de 200ml de Feijão Amigo.',
         products: [
@@ -461,7 +461,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc743',
         title: 'Filé Mignon aos 4 queijos',
         description:
           'Suculento Filé Mignon selecionado, com nosso exclusivo molho 4 queijos, preparado na hora.',
@@ -487,7 +487,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 5,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc843',
         title: 'Combo: Escondidinho de Carne Assada + Escondidinho de Camarão',
         description:
           'Duas porções individuais, 400g cada, de Econdidinho de Carne Assada e Escondidinho de Camarão.',
@@ -533,7 +533,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc943',
         title: 'Salada Primavera',
         description:
           'Folhas, gergelim, abobrinha e tomate com suco de limão e molho.',
@@ -647,7 +647,7 @@ export const offers: OffersResponse[] = [
         ],
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc253',
         title: 'Salada Caesar',
         description: 'Alface romana, queijo parmesão, croutons e molho Caesar.',
         products: [
@@ -678,7 +678,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc263',
         title: 'Cheesecake',
         description: 'Cheesecake com calda de frutas vermelhas ou caramelo.',
         products: [
@@ -703,7 +703,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 10,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc273',
         title: 'Pudim de Leite Condensado',
         description:
           'Porção individual de aproximadamente 300g de Pudim de Leite Condensado.',
@@ -735,7 +735,7 @@ export const offers: OffersResponse[] = [
     maximum_quantity: 0,
     offers: [
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc283',
         title: 'Escondidinho de Carne Assada + Salada Primavera',
         description: 'Combo: Escondidinho de Carne Assada + Salada Primavera',
         products: [
@@ -774,7 +774,7 @@ export const offers: OffersResponse[] = [
         maximum_quantity: 5,
       },
       {
-        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc243',
+        id: '26077117-da7a-4aaa-b8d6-dbae0d9cc293',
         title: 'Filé Mignon aos 4 queijos + 2 Pudins de Leite Condensado',
         description:
           'Combo: Filé Mignon aos 4 queijos + 2 Pudins de Leite Condensado',

@@ -4,11 +4,14 @@ type ControlAreaType = {
   disabled: boolean;
 };
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const PageCardContainer = styled.div`
   margin-top: -30px;
-  z-index: ${({ theme }) => theme.layers.base};
+  z-index: 50;
   width: 100%;
 `;
 

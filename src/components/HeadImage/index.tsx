@@ -11,7 +11,7 @@ function HeadImage({ ...props }: HeadImageProps) {
       <S.Header>
         {handleBackButton && (
           <S.AlwaysOnTop>
-            <S.IconButton>
+            <S.IconButton onClick={handleBackButton}>
               <ChevronLeftIcon />
             </S.IconButton>
           </S.AlwaysOnTop>
