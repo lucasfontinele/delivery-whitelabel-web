@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   position: fixed;
   bottom: 56px;
   width: 100%;
+  z-index: 150;
 `;
 
 export const Link = styled(RouterLink)`

@@ -1,19 +1,20 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { Meta } from '@storybook/react/types-6-0';
 
 import QuantityCounter from '.';
-import type { QuantityCounterProps } from './misc';
+// import type { QuantityCounterProps } from './misc';
 
 export default {
   title: 'Component/QuantityCounter',
   component: QuantityCounter,
 } as Meta;
 
-const Template: Story<QuantityCounterProps> = args => (
-  <QuantityCounter {...args} />
-);
+// const Template: Story<QuantityCounterProps> = args => (
+//   <QuantityCounter {...args} />
+// );
 
-export const Default = Template.bind({});
+// export const Default = Template.bind({});
 
-Default.args = {
-  variantColor: '#171717',
-};
+// Default.args = {
+//   variantColor: '#171717',
+//   counter: {} as (value: number) => void,
+// };

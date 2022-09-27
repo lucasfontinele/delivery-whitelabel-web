@@ -7,13 +7,12 @@ import Map from 'components/Map';
 import Tabs from 'components/Tabs';
 import { mock, TabsProps } from 'components/Tabs/misc';
 import { TextArea } from 'components/TextArea/styles';
-import { checkoutMock } from 'components/Card/mock';
 import PaymentOnDelivery from 'components/PaymentOnDelivery';
 import { PaymentType } from 'components/PaymentOnDelivery/misc';
-
 import Button from 'components/Button';
 import InAppPurchase from 'components/InAppPurchase';
 import Clock from 'components/Icons/Clock';
+import { useCart } from 'hooks/useCart';
 
 import * as S from './styles';
 
@@ -31,6 +30,8 @@ const paymentDetails: TabsProps = {
 };
 
 function Checkout() {
+  const { offers } = useCart();
+
   const [paymentDetailsValue, setPaymentDetailsValue] = useState(0);
   const [paymentType, setPaymentType] = useState<PaymentType>();
 
@@ -82,8 +83,18 @@ function Checkout() {
         <S.SectionTitle>Seu pedido</S.SectionTitle>
 
         <S.OffersList>
-          <Card {...checkoutMock} />
-          <Card {...checkoutMock} />
+          {offers.map(({ offer, quantity }) => (
+            <Card
+              description={offer.description}
+              name={offer.title}
+              price={offer.amount * quantity}
+              image="https://img.cybercook.com.br/receitas/71/salada-primavera-6.jpeg"
+              hasCounter
+              offerId={offer.id}
+              counter={quantity}
+              hasNavigation={false}
+            />
+          ))}
         </S.OffersList>
 
         <S.AmountValueContainer>

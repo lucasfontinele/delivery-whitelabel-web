@@ -1,7 +1,7 @@
 export const ROUTES = {
   PRODUCT: {
     ROOT: '/',
-    REGISTER: 'offers',
+    REGISTER: 'add-product',
   },
   ADDRESS: {
     ROOT: 'address',

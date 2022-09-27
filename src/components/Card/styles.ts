@@ -1,17 +1,18 @@
 import styled, { css, DefaultTheme } from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const WrapperSkeleton = styled.div`
   max-width: 350px;
   display: block;
 `;
 
-export const WrapperLink = styled(Link)`
+export const WrapperLink = styled.button`
   cursor: pointer;
   text-decoration: none;
   color: initial;
   max-width: 350px;
   display: block;
+  background: transparent;
+  border: none;
 `;
 
 export const Wrapper = styled.article`
@@ -19,6 +20,7 @@ export const Wrapper = styled.article`
     display: flex;
     justify-content: space-between;
     gap: ${theme.spacings.medium};
+    align-items: flex-start;
   `}
 `;
 
@@ -33,6 +35,7 @@ export const Name = styled.h3`
     font-size: ${theme.font.content.regular};
     line-height: 120%;
     color: ${theme.colors.neutral.dark};
+    text-align: left;
   `}
 `;
 
@@ -43,12 +46,14 @@ export const Description = styled.p`
     line-height: 120%;
     color: ${theme.colors.neutral.dark};
     margin-top: ${theme.spacings.xxxsmall};
+    text-align: left;
   `}
 `;
 
 export const BuyBox = styled.div`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.xxxsmall};
+    text-align: left;
   `}
 `;
 
@@ -67,6 +72,7 @@ const priceModifiers = {
     font-weight: ${theme.font.weights.medium};
     font-size: ${theme.font.content.large};
     color: ${theme.colors.neutral.dark};
+    text-align: left;
   `,
 
   promotional: (theme: DefaultTheme) => css`
@@ -75,6 +81,7 @@ const priceModifiers = {
     font-size: ${theme.font.content.regular};
     text-decoration: line-through;
     margin-left: ${theme.spacings.small};
+    text-align: left;
   `,
 };
 
@@ -82,6 +89,7 @@ export const Price = styled.div<PriceProps>`
   ${({ theme, isPromotional }) => css`
     display: inline-flex;
     align-items: center;
+    text-align: left;
 
     ${!isPromotional && priceModifiers.default(theme)}
     ${isPromotional && priceModifiers.promotional(theme)}
