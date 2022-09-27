@@ -32,6 +32,13 @@ function Offers() {
   const [distance, setDistance] = useState('0');
   const [search, setSearch] = useState('');
 
+  const scrollOptions = offers.map((option, index) => {
+    return {
+      id: index,
+      label: option.label,
+    };
+  });
+
   const handleDistance = () => {
     const calculatedDistance = calculateDistanceBetween([a, b]);
 
@@ -79,7 +86,7 @@ function Offers() {
             </S.SearchContainer>
 
             <S.CategoriesContainer>
-              <CategoriesScroll />
+              <CategoriesScroll options={scrollOptions} />
             </S.CategoriesContainer>
 
             <S.OffersContainer>
