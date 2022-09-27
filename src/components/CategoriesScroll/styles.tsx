@@ -14,16 +14,23 @@ export const Container = styled.div`
   grid-column-gap: 24px;
 `;
 
-export const Option = styled.button`
+export const Option = styled.a`
   background: ${({ theme }) => theme.colors.primary};
   border-radius: 8px;
   padding: 8px 16px;
   border: none;
   outline: none;
 
+  max-height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 100%;
   text-align: center;
 

@@ -3,6 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import ApplicationContext from 'hooks/useTheme';
+import { StoreProvider } from 'contexts/store';
+import { OffersProvider } from 'contexts/offers';
 import Router from 'routes/index';
 import GlobalStyles from 'styles/global';
 import theme from 'styles/theme';
@@ -13,10 +15,14 @@ function App() {
   return (
     <BrowserRouter>
       <ApplicationContext>
-        <ThemeProvider theme={theme}>
-          <Router />
-          <GlobalStyles />
-        </ThemeProvider>
+        <StoreProvider>
+          <OffersProvider>
+            <ThemeProvider theme={theme}>
+              <Router />
+              <GlobalStyles />
+            </ThemeProvider>
+          </OffersProvider>
+        </StoreProvider>
       </ApplicationContext>
     </BrowserRouter>
   );

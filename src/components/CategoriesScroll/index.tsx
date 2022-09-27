@@ -1,11 +1,13 @@
-import { mock } from './misc';
+import type { CategoriesScrollProps } from './misc';
 import * as S from './styles';
 
-function CategoriesScroll() {
+function CategoriesScroll({ options }: CategoriesScrollProps) {
   return (
     <S.Container>
-      {mock.map(item => (
-        <S.Option key={item.id}>{item.label}</S.Option>
+      {options.map(item => (
+        <S.Option href={`#${item.label}`} key={item.id}>
+          {item.label}
+        </S.Option>
       ))}
     </S.Container>
   );
