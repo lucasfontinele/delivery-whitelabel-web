@@ -17,6 +17,8 @@ export type CardProps = {
   image: string;
   hasCounter?: boolean;
   offerId: string;
+  counter?: number;
+  hasNavigation?: boolean;
 };
 
 const Card = ({
@@ -27,14 +29,17 @@ const Card = ({
   promotionalPrice,
   hasCounter,
   offerId,
+  counter = 0,
+  hasNavigation = true,
 }: CardProps) => {
   const navigate = useNavigate();
   const { setCurrentOffer } = useCart();
   const offersResponse = useOffers();
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(counter);
 
   const handleClick = useCallback(() => {
-    if (!navigate || !setCurrentOffer || !offersResponse) return;
+    if (!navigate || !setCurrentOffer || !offersResponse || !hasNavigation)
+      return;
 
     const foundOffer = offersResponse.map(group =>
       group.offers.find(item => item.id === offerId),
@@ -44,7 +49,7 @@ const Card = ({
 
     setCurrentOffer(foundOffer[0]);
     navigate(`/${ROUTES.PRODUCT.REGISTER}`);
-  }, [navigate, setCurrentOffer, offersResponse, offerId]);
+  }, [navigate, setCurrentOffer, offersResponse, offerId, hasNavigation]);
 
   // TODO: improve decrement and increment functions
   const handleIncrement = () => {

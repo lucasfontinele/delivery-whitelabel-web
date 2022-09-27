@@ -2,7 +2,6 @@ import {
   createContext,
   ReactNode,
   useCallback,
-  useEffect,
   useMemo,
   useState,
 } from 'react';
@@ -74,10 +73,6 @@ export function CartProvider({ children }: CartProviderType) {
       setCurrentOffer,
     };
   }, [offers, handleAddOffer, currentOffer, setCurrentOffer]);
-
-  useEffect(() => {
-    console.log(offers);
-  }, [offers]);
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }

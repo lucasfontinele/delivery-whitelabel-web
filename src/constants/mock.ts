@@ -1019,7 +1019,9 @@ export const store: StoreResponse = {
       '2021-02-17',
       '2021-03-01',
       // '2022-09-25',
-      // '2022-09-26',
+      // '2022-09-27',
     ],
   },
 };
+
+// Configuração de pedidos
