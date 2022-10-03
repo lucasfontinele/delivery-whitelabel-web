@@ -1,11 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
+import { ROUTES } from 'constants/routes';
 
 import PageWrapper from 'components/PageWrapper';
+
 import AddressRegister from 'pages/AddressRegister';
 import AddProduct from 'pages/AddProduct';
 import Offers from 'pages/Offers';
 import Checkout from 'pages/Checkout';
-import { ROUTES } from 'constants/routes';
+import MenuOptions from 'pages/MenuOptions';
+
 import ScrollToTop from 'utils/ScrollTop';
 
 function Router() {
@@ -27,6 +30,13 @@ function Router() {
 
           <Route path={ROUTES.CHECKOUT.ROOT}>
             <Route path={ROUTES.CHECKOUT.CART} element={<Checkout />} />
+          </Route>
+
+          <Route path={ROUTES.MENUOPTIONS.ROOT}>
+            <Route
+              path={ROUTES.MENUOPTIONS.OPTION}
+              element={<MenuOptions option={1} />}
+            />
           </Route>
         </Route>
       </Routes>

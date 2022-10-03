@@ -11,4 +11,8 @@ export const ROUTES = {
     ROOT: 'checkout',
     CART: 'cart',
   },
+  MENUOPTIONS: {
+    ROOT: 'menu-options',
+    OPTION: 'option',
+  },
 };
