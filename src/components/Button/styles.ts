@@ -14,6 +14,7 @@ export const Container = styled.button`
 
   display: flex;
   align-items: center;
+  gap: 16px;
 
   padding: 12px 25px 13px;
 

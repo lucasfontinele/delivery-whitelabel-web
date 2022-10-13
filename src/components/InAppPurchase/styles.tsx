@@ -68,3 +68,7 @@ export const ChangeCardTitle = styled.a`
   text-decoration-line: underline;
   color: ${({ theme }) => theme.colors.primary};
 `;
+
+export const ButtonContainer = styled.div`
+  margin-top: 8px;
+`;
