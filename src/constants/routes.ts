@@ -15,4 +15,8 @@ export const ROUTES = {
     ROOT: 'menu-options',
     OPTION: 'option',
   },
+  PAYMENTS: {
+    ROOT: 'payments',
+    OPTION: 'register',
+  },
 };

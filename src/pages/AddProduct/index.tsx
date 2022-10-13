@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import { useCallback, useState } from 'react';
 import { useTheme } from 'styled-components';
 import { useNavigate } from 'react-router-dom';

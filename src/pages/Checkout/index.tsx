@@ -1,7 +1,9 @@
+/* eslint-disable import/no-unresolved */
 import { useCallback, useState } from 'react';
 
 import AddressDetail from 'components/AddressDetail';
 import BackButton from 'components/BackButton';
+import OutlinedContainer from 'components/OutlinedContainer';
 import Card from 'components/Card';
 import Map from 'components/Map';
 import Tabs from 'components/Tabs';
@@ -13,8 +15,14 @@ import Button from 'components/Button';
 import InAppPurchase from 'components/InAppPurchase';
 import Clock from 'components/Icons/Clock';
 import { useCart } from 'hooks/useCart';
+import CreditCard from 'components/Icons/CreditCard';
 
 import * as S from './styles';
+
+export type CardType = {
+  flag: string;
+  card: string;
+};
 
 const paymentDetails: TabsProps = {
   options: [
@@ -29,11 +37,17 @@ const paymentDetails: TabsProps = {
   ],
 };
 
+const card = {
+  flag: 'Mastercard',
+  card: '•••• •••• •••• 1234',
+};
+
 function Checkout() {
   const { offers } = useCart();
 
   const [paymentDetailsValue, setPaymentDetailsValue] = useState(0);
   const [paymentType, setPaymentType] = useState<PaymentType>();
+  const [creditCard, setCreditCard] = useState<CardType>();
 
   const handleSelectPaymentDetails = useCallback((type?: PaymentType) => {
     // if (type === paymentType) {
@@ -50,7 +64,6 @@ function Checkout() {
       <S.BackContainer>
         <BackButton />
       </S.BackContainer>
-
       <S.TabsContainer>
         <Tabs {...mock} />
       </S.TabsContainer>
@@ -67,7 +80,6 @@ function Checkout() {
           <TextArea placeholder="Adicione aqui informações adicionais sobre sua localização." />
         </S.MapObservationContainer>
       </S.MapContainer>
-
       <S.EstimatedDeliveryTimeContainer>
         <Clock />
 
@@ -78,7 +90,6 @@ function Checkout() {
           </S.EstimatedDeliveryDescription>
         </S.EstimatedDeliveryInfo>
       </S.EstimatedDeliveryTimeContainer>
-
       <S.OrderDetailsContainer>
         <S.SectionTitle>Seu pedido</S.SectionTitle>
 
@@ -102,31 +113,42 @@ function Checkout() {
           <S.SectionTitle>R$ 26,70</S.SectionTitle>
         </S.AmountValueContainer>
       </S.OrderDetailsContainer>
-
       <S.Divider />
-
-      <S.PaymentDetailsContainer>
-        <S.SectionTitle>Pagamento</S.SectionTitle>
-
-        <Tabs
-          onChangeTab={value => setPaymentDetailsValue(value)}
-          {...paymentDetails}
-        />
-
-        {paymentDetailsValue === 0 && <InAppPurchase />}
-        {paymentDetailsValue === 1 && (
-          <PaymentOnDelivery
-            onChangePaymentType={type => handleSelectPaymentDetails(type)}
-            paymentType={paymentType}
+      {!creditCard && (
+        <S.PaymentDetailsContainer>
+          <S.ButtonContainer>
+            <S.LinkStyled to="/payments/register">
+              <OutlinedContainer>
+                <CreditCard />
+                <S.AddCardTitle>Adicionar um cartão</S.AddCardTitle>
+              </OutlinedContainer>
+            </S.LinkStyled>
+          </S.ButtonContainer>
+        </S.PaymentDetailsContainer>
+      )}
+      {creditCard && (
+        <S.PaymentDetailsContainer>
+          <S.SectionTitle>Pagamento</S.SectionTitle>
+          <Tabs
+            onChangeTab={value => setPaymentDetailsValue(value)}
+            {...paymentDetails}
           />
-        )}
-
-        <S.ButtonContainer>
-          <Button content="center" type="button" variant="contained">
-            Fazer pedido
-          </Button>
-        </S.ButtonContainer>
-      </S.PaymentDetailsContainer>
+          {paymentDetailsValue === 0 && (
+            <InAppPurchase creditCard={creditCard} />
+          )}
+          {paymentDetailsValue === 1 && (
+            <PaymentOnDelivery
+              onChangePaymentType={type => handleSelectPaymentDetails(type)}
+              paymentType={paymentType}
+            />
+          )}
+          <S.ButtonContainer>
+            <Button content="center" type="button" variant="contained">
+              Fazer pedido
+            </Button>
+          </S.ButtonContainer>
+        </S.PaymentDetailsContainer>
+      )}
     </S.Container>
   );
 }

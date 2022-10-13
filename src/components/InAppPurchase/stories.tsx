@@ -7,7 +7,15 @@ export default {
   component: InAppPurchase,
 } as Meta;
 
-const Template: Story = args => <InAppPurchase {...args} />;
+const Template: Story = args => (
+  <InAppPurchase
+    creditCard={{
+      flag: '',
+      card: '',
+    }}
+    {...args}
+  />
+);
 
 export const Default = Template.bind({});
 
