@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   position: relative;
@@ -17,6 +18,10 @@ export const TabsContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const LinkStyled = styled(Link)`
+  text-decoration: none;
 `;
 
 export const MapContainer = styled.div`
@@ -130,4 +135,13 @@ export const PaymentDetailsContainer = styled.div`
 
 export const ButtonContainer = styled.div`
   margin-top: 8px;
+`;
+
+export const AddCardTitle = styled.p`
+  margin-left: 2.4rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 100%;
+  color: ${({ theme }) => theme.colors.primary};
 `;

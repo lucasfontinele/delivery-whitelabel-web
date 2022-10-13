@@ -3,6 +3,7 @@ import { useCallback, useState } from 'react';
 
 import AddressDetail from 'components/AddressDetail';
 import BackButton from 'components/BackButton';
+import OutlinedContainer from 'components/OutlinedContainer';
 import Card from 'components/Card';
 import Map from 'components/Map';
 import Tabs from 'components/Tabs';
@@ -116,9 +117,12 @@ function Checkout() {
       {!creditCard && (
         <S.PaymentDetailsContainer>
           <S.ButtonContainer>
-            <Button content="left" type="button" variant="outlined">
-              <CreditCard /> {'  Adicionar um cartão'}
-            </Button>
+            <S.LinkStyled to="/payments/register">
+              <OutlinedContainer>
+                <CreditCard />
+                <S.AddCardTitle>Adicionar um cartão</S.AddCardTitle>
+              </OutlinedContainer>
+            </S.LinkStyled>
           </S.ButtonContainer>
         </S.PaymentDetailsContainer>
       )}
