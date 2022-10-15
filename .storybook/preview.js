@@ -1,3 +1,4 @@
+import { themes } from '@storybook/theming';
 import { ThemeProvider } from 'styled-components';
 
 import theme from '../src/styles/theme';
@@ -30,6 +31,9 @@ export const parameters = {
     },
   },
   layout: 'fullscreen',
+  docs: {
+    theme: themes.dark,
+  },
 };
 
 export const decorators = [

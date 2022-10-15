@@ -6,6 +6,13 @@ import type { AlertProps } from './Alert.misc';
 export default {
   title: 'Component/Alert',
   component: Alert,
+  argTypes: {
+    type: {
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
 } as Meta;
 
 const Template: Story<AlertProps> = args => <Alert {...args} />;
