@@ -47,6 +47,13 @@ export const Description = styled.p`
     color: ${theme.colors.neutral.dark};
     margin-top: ${theme.spacings.xxxsmall};
     text-align: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
   `}
 `;
 
